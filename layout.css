@@ -1,39 +1,47 @@
 .topNav {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    background-color: black;
-    color: #C0B283;
+    align-items: center;
+    color: black;
+    background-color: #A6ABAD;
     position: fixed;
     overflow: hidden;
     top: 0;
     width: 100%;
-    margin-left: -10px;
+    height: 30px;
+    /*margin-left: -240px;*/
+    left: 0;
+    right: 0;
     padding: 2px;
 }
 .pageOneHeader {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    height: 70px;
     color: black;
 }
 .explanation {
     color: black;
+    height: 30px;
 }
 .chairPictures {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
+    width: 864px;
+    height: 320px;
+    margin: auto;
 }
 .chairImage {
-    max-width: 205px;
+    max-width: 517px;
     height: 320px;
     overflow: hidden;
 }
 .funFact {
     text-align: center;
     color: black;
+    height: 50px;
 }
 .explanation {
     text-align: center;
@@ -43,6 +51,7 @@
     justify-content: space-between;
     overflow: hidden;
     bottom: 0;
+    left: 0;
     position: fixed;
     width: 99%;
     color: grey;
@@ -58,18 +67,18 @@ html {
 }
 .navBarItem {
     text-decoration: none;
-    color: #C0B283
+    color: #FFFFFF
 }
 .navBarItem:hover {
-    color: #F4F4F4;
+    color:#69747A;
 }
 
 /* Chair Pages  */
 
 .imageContainer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 40px;
+    display: grid;
+    grid-template: 50% 50% / 25% 25% 25% 25%;
+    padding: 10px;
     justify-content: center;
 }
 
@@ -77,7 +86,10 @@ html {
     max-width: 200px;
     height: auto;
     margin: auto;
-    padding: 30px;
+    padding: 10px;
+}
+ul {
+    padding: 10px;
 }
 
 h3 {
@@ -91,5 +103,9 @@ h2 {
 .reviewPara {
     max-width: 500px;
     height: auto;
+    margin: auto;
+}
+body {
+    width: 960px;
     margin: auto;
 }
