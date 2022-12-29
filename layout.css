@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-    width: 864px;
+    width: 61.7%;
     height: 320px;
     margin: auto;
 }
@@ -87,6 +87,8 @@ html {
     grid-template: 50% 50% / 25% 25% 25% 25%;
     padding: 10px;
     justify-content: center;
+    width: 61.8%;
+    margin: auto;
 }
 
 .markusImg {
@@ -113,6 +115,45 @@ h2 {
     margin: auto;
 }
 body {
-    width: 960px;
+    width: 100%;
     margin: auto;
+}
+.quizHead {
+    text-align: center;
+}
+.quizHeader {
+    text-align: center;
+    margin-top: 50px;
+}
+.formName {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.quizQuestions {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    padding: 10px;
+    justify-content: space-around;
+    margin: auto;
+
+    text-align: center;
+}
+
+.quizQ {
+    padding: 20px;
+}
+.dateEmail {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.fieldQuiz {
+    width: 61.8%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
