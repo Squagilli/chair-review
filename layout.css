@@ -69,6 +69,13 @@ html {
     text-decoration: none;
     color: #FFFFFF
 }
+.bottomItem {
+    text-decoration: none;
+    color: grey;
+}
+.bottomItem:hover {
+    color: black;
+}
 .navBarItem:hover {
     color:#69747A;
 }
