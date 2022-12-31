@@ -19,85 +19,97 @@
         <h1 class="quizHeader">Which of These Chairs is for You?</h1>
         <h2 class="quizHead">Fill out the form below to find out</h2>
 
-        <form action="formUrl" method="post">
-            <fieldset class="fieldQuiz">
-                <legend>Chair Quiz</legend>
+        <div class="formContainer">
+            <form class="theForm" action="formUrl" method="post">
+                <fieldset class="fieldQuiz">
+                    <legend>Chair Quiz</legend>
 
-                <div class="formName">
-                    <div>
-                        <label for="questionOne">First Name:</label>
-                        <input type="text" id="questionOne" name="question-one">
+                    <div class="formName">
+                        <div>
+                            <label for="questionOne">First Name:</label>
+                            <input type="text" id="questionOne" name="question-one">
+                        </div>
+
+                        <div>
+                            <label for="questionTwo">Last Name:</label>
+                            <input type="text" id="questionTwo" name="question-two">
+                        </div>
+                    </div>
+
+                    <div class="quizQuestions">
+                        <div class="quizQ">
+                            <label for="q1">1.</label>
+                            <select name="ques1" id="q1">
+                                <option>How long do you sit?</option>
+                                <option>I sit for 10 hours a day</option>
+                                <option>I never sit</option>
+                            </select>
+                        </div>
+
+                        <div class="quizQ">
+                            <label for="q2">2.</label>
+                            <select name="ques2" id="q2">
+                                <option>Where is your chair?</option>
+                                <option>Bathroom</option>
+                                <option>Kitchen</option>
+                            </select>
+                        </div>
+
+                        <div class="quizQ">
+                            <label for="q3">3.</label>
+                            <select name="ques3" id="q3">
+                                <option>Why do you sit?</option>
+                                <option>Work</option>
+                                <option>School</option>
+                            </select>
+                        </div>
+
+                        <div class="quizQ">
+                            <label for="q4">4.</label>
+                            <select name="ques4" id="q4">
+                                <option>Back Pain?</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="textArea">
+                        <p>Other important info:</p>
+                        <textarea>
+
+                        </textarea>
+                    </div>
+
+                    <div class="dateEmail">
+                        <div>
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="haveSat">
+                        <label for="checkBox">I have sat in a chair before</label>
+                        <input type="checkbox" id="checkBox" name="check-box">
                     </div>
 
                     <div>
-                        <label for="questionTwo">Last Name:</label>
-                        <input type="text" id="questionTwo" name="question-two">
+                        <button type="button" action="submit">Find my chair</button>
                     </div>
-                </div>
+                </fieldset>
+                <img class="man" src="images/sitting-business-man-is-confused-stock-photo_csp53827626.webp" alt="confused man">
+            </form>
 
-                <div class="quizQuestions">
-                    <div class="quizQ">
-                        <label for="q1">1.</label>
-                        <select name="ques1" id="q1">
-                            <option>Choose One</option>
-                            <option>bepis</option>
-                            <option>bepis2</option>
-                        </select>
-                    </div>
-
-                    <div class="quizQ">
-                        <label for="q2">2.</label>
-                        <select name="ques2" id="q2">
-                            <option>Choose One</option>
-                            <option>bepis</option>
-                            <option>bepis2</option>
-                        </select>
-                    </div>
-
-                    <div class="quizQ">
-                        <label for="q3">3.</label>
-                        <select name="ques3" id="q3">
-                            <option>Choose One</option>
-                            <option>bepis</option>
-                            <option>bepis2</option>
-                        </select>
-                    </div>
-
-                    <div class="quizQ">
-                        <label for="q4">4.</label>
-                        <select name="ques4" id="q4">
-                            <option>Choose One</option>
-                            <option>bepis</option>
-                            <option>bepis2</option>
-                        </select>
-                    </div>
-                </div>
+        </div>
 
 
-                <div class="textArea">
-                    <textarea>
-
-                    </textarea>
-                </div>
-
-                <div class="dateEmail">
-                    <div>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date">
-                    </div>
-
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                </div>
-
-                <div class="haveSat">
-                    <label for="checkBox">I have sat in a chair before</label>
-                    <input type="checkbox" id="checkBox" name="check-box">
-                </div>
-            </fieldset>
-        </form>
+        <h3>(Quiz will be functional when I learn JavaScript)</h3>
 
     </body>
 </html>
