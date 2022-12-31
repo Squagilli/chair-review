@@ -127,20 +127,23 @@ body {
 }
 .formName {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 #questionOne {
     padding: 5px;
+    width: 300px;
 }
 #questionTwo {
     padding: 5px;
+    width: 300px;
 }
 .quizQuestions {
-    display: grid;
-    grid-template: 50% 50% / 50% 50%;
+    display: flex;
+    flex-flow: column wrap;
     padding: 10px;
     justify-content: space-around;
     margin: auto;
@@ -148,15 +151,39 @@ body {
     text-align: center;
 }
 
+#q1 {
+    width: 200px;
+}
+#q2 {
+    width: 200px;
+}
+#q3 {
+    width: 200px;
+}
+#q4 {
+    width: 200px;
+}
+
+
 .quizQ {
     padding: 4px;
-    width: 200px;
+    width: 300px;
 }
 .dateEmail {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 10px;
+    height: 100px;
 
+}
+#date {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+#email {
+    padding: 5px;
+    width: 200px;
 }
 .fieldQuiz {
     max-width: 400px ;
@@ -169,9 +196,12 @@ button {
 }
 .haveSat {
     padding: 5px;
+    margin-bottom: 10px;
 }
 .textArea {
     display: flex;
+    flex-flow: column wrap;
+    text-align: center;
     width: 250px;
     margin: auto;
     align-self: center;
@@ -194,8 +224,7 @@ fieldset {
     border-bottom: .5px solid black;
     margin-top: -1px;
     margin-bottom: 1px;
-    background-color: #A6ABAD;
-    color: white;
+    color: black;
 
 }
 .man {
@@ -206,3 +235,7 @@ fieldset {
     margin-top: 8px;
     margin-left: -2px;
     margin-bottom: 1.3px;
+}
+legend {
+    color: black
+}
